@@ -1,0 +1,156 @@
+Q7. What are different ways to create String Object?
+	Ans: 1. By using String literal
+			ex: String s="java";
+		 2. By using "new" keyword
+		 	Ex: String s=new String("java");
+		 	
+Q8. How can we make String upper case to lower case?
+	Ans: By using toLowerCase() method.
+	
+Q9. How can we make String Lower case to Upper case?
+	Ans: By using toUpperCase() method.
+	
+Q10. What is String subsequence method?
+	Ans: subSequence() is a built-in function in Java that returns a CharSequence. CharSequence that is a subsequence of this sequence.
+	The subsequence starts with the char value at the specified index and ends with the char value at (end-1).
+	
+Q11. How to Split String in java?
+	 Ans: By using string split() method.
+	 
+Q37. What is JVM and explain me the Java memory allocation
+	 Ans: JVM is a Java Virtual Machine, which doesn't exists physically.
+	 		and it is whole responsible to execute the java program.
+	 	 --> JVM has 4 parts, stack, heap memory, static pool area, method area.
+	 	 		--stack has the class loader
+	 	 		--heap memory used to store non static members of the class.
+	 	 		--static pool area will store static members of the class
+	 	 		--method area will store method body/definition.
+	 	 		
+Q38. What is Polymorphism and encapsulation?
+	Ans: --Polymorphism: An Object showing different behaviour at different stages of its life cycle is called as polymorphism.
+			'poly' means many, 'morphism' means forms.
+		 --Encapsulation: Wrapping up of datamembers and function members into a single unit is called as encapsulation.
+		 					OR
+		 				  Declare datamembers as private and restrict the direct access outside the class,
+		 				  and provide the indirect access through public services called getters & setters is called Encapsulation.
+		 				  
+Q39. What is method overloading and Method over riding?
+	 Ans: Overloading--> Developing multiple methods with same name but variation in the arguement list is called method overloading.
+	 	  OverRiding--> Developing method in sub class with same name and signature as in the superclass but
+	 	  				with different implementation in the subclass is called method overriding.
+	 	  		
+Q40. Why string is Immutable?
+	 Ans: The string is immutable means that we cannot change the object itself, but we can change the reference to the object. 
+	      The string is made final to not allow others to extend it and destroy its immutability
+
+Q41. What is the difference between String and String buffer?
+	 Ans: --The String class is immutable while StringBuffer class is mutable.
+	 	  --String is slow and consumes more memory when we concatenate too many strings because every time it creates new instance.
+	 	  	StringBuffer is fast and consumes less memory when we concatenate t strings.
+	 	  
+Q42. What is the difference between array and array list?
+	 Ans: An array is a fixed-length data structure. 
+	      ArrayList is a variable-length data structure. It can be resized itself when needed.
+	      It is mandatory to provide the size of an array while initializing it directly or indirectly.
+
+Q43. What is the difference between hash map and Hash table?
+	 Ans: It is thread-safe and can be shared with many threads. HashMap allows one null key and multiple null values whereas Hashtable doesn't allow any null key or value.
+	 	  HashMap is generally preferred over HashTable if thread synchronization is not needed
+
+Q44. What is a vector in Java? 
+	 Ans: Vector implements a dynamic array which means it can grow or shrink as required. Like an array, it contains components that can be accessed using an integer index.
+	 	  They are very similar to ArrayList, but Vector is synchronized and has some legacy methods that the collection framework does not contain
+	 	  
+Q45. What is set in java?
+	 Ans: A Set is a Collection that cannot contain duplicate elements. It models the mathematical set abstraction.
+	 	  The Set interface contains only methods inherited from Collection and adds the restriction that duplicate elements are prohibited
+	 	  
+Q46. What is an abstract class?
+	 Ans: Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class). 
+	 	  Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass
+	 	  
+Q47. What is an interface?
+	 Ans: An Interface in Java programming language is defined as an abstract type used to specify the behavior of a class. An interface in Java is a blueprint of a class.
+	 	  A Java interface contains static constants and abstract methods. The interface in Java is a mechanism to achieve abstraction
+	 	  
+Q48. Why Java is Platform independent?
+	 Ans: Java is platform independent because the .class file can be executed on any electronic device,
+	 	  since JRE present in each and every electronic device, hence java is platform independent.
+
+Q49. What are access modifiers? Give me an example?
+	 Ans: Access Modifiers used to restrict the access from one class to another class/package.
+	 		Ex: class Animal {
+    			public void method1() {...}
+
+   				private void method2() {...}
+				}
+
+Q50. What are java exceptions? Give me an example?
+	 Ans: an event that occurs during the execution of a program that disrupts the normal flow of instructions is called an exception.
+	 	  This is generally an unexpected or unwanted event which can occur either at compile-time or run-time in application code
+	 	  Ex: NullPointerException, ArrayIndexOutOfBoundsException, ClassCastException
+	 	  
+Q51. What is the difference between throws and throwable?
+	 Ans: The throw and throws is the concept of exception handling where the throw keyword throw the exception explicitly from a method or a block of code
+	 	  whereas the throws keyword is used in signature of the method.
+	 
+Q52. What is the difference between Error and exception?
+	 Ans: Errors are usually raised by the environment in which the application is running. For example, an error will occur due to a lack of system resources.
+	 	  Exceptions are caused by the code of the application itself. It is not possible to recover from an error
+	 	  
+Q53. What is the difference between Error, throwable and exception?
+	 Ans: Errors are usually raised by the environment in which the application is running. For example, an error will occur due to a lack of system resources.
+	 	  Exceptions are caused by the code of the application itself. It is not possible to recover from an error
+	 	  Any object that can be thrown in the manner of an exception.
+	 	  Exceptions are thrown when some module of the project detects an error condition or if it handles some standard Java throwables.
+
+Q54. What are collection APIs, give me an example
+	 Ans: Collection, Set, List and Map. The Collection API is the framework that provides an architecture to the stores and manipulate the group of projects
+	      and basically it is a package of data structures that includes Array lists, Linked lists, Hash sets
+	      
+Q55.What is the difference between Final and Finally?
+	 Ans: final is the keyword and access modifier which is used to apply restrictions on a class, method or variable.
+	 	  finally is the block in Java Exception Handling to execute the important code whether the exception occurs or not.
+	 	  
+Q56. Will java supports multiple inheritance?
+	 Ans: The Java programming language supports multiple inheritance of type, which is the ability of a class to implement more than one interface.
+	      An object can have multiple types: the type of its own class and the types of all the interfaces that the class implements.
+	      
+Q57. What are the different types of interface?
+	 Ans: List, set, Queue
+	
+Q58. What are wrapper class? Give me an example?
+	 Ans: In simple words, wrapper class provides a mechanism to convert primitive data type value into an object and vice-versa.
+	      Ex: wrapping int into Integer class, wrapping double into Double class, and wrapping char into Character class
+	 
+Q59. What is boxing and unboxing in Java? Explain with an example?
+	 Ans: The automatic conversion of primitive data types into its equivalent Wrapper type is known as boxing and opposite operation is known as unboxing.
+	 	  This is the new feature of Java5. So java programmer doesn't need to write the conversion code
+	 	 Ex: int a=50;  
+       		 Integer a2=new Integer(a);//Boxing  
+  
+      		  Integer a3=5;//Boxing  
+       	   
+     		   System.out.println(a2+" "+a3); 
+	 	  
+Q60. Explain for each loop?
+	 Ans: A for-each loop is a loop that can only be used on a collection of items. It will loop through the collection and each time through the loop it will use the next item from the collection.
+	 	 It starts with the first item in the array (the one at index 0) and continues through in order to the last item in the array.
+	 	 
+Q61. What are iterators, explain with an example?
+	 Ans: An Iterator is an object that can be used to loop through collections, like ArrayList and HashSet.
+	 	 It is called an "iterator" because "iterating" is the technical term for looping. To use an Iterator, you must import it from the java.
+		Ex: while(it.hasNext()) {
+  			System.out.println(it.next());
+			}
+		
+Q63. What is multithreading, serialization and Generics in Java
+	 Ans: --Multithreading in Java is a process of executing multiple threads simultaneously. A thread is a lightweight sub-process,
+	 	  	the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.
+	 	  --Serialization in Java is the process of converting the Java code Object into a Byte Stream, to transfer the Object Code from one Java Virtual machine to another and recreate it using the process of Deserialization
+	 	  --Java Generics is a set of related methods or a set of similar types. Generics allow types Integer, String, or even user-defined types to be passed as a parameter to classes,
+	 	  	methods, or interfaces. Generics are mostly used by classes like HashSet or HashMap.
+	 	  
+
+
+	 	 		
